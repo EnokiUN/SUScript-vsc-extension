@@ -4,9 +4,6 @@
 	"patterns": [
 		{
 			"include": "#keywords"
-		},
-		{
-			"include": "#strings"
 		}
 	],
 	"repository": {
@@ -16,16 +13,11 @@
 				"match": "\\b(if|while|for|return)\\b"
 			}]
 		},
-		"strings": {
-			"name": "string.quoted.double.sus",
-			"begin": "\"",
-			"end": "\"",
-			"patterns": [
-				{
-					"name": "constant.character.escape.sus",
-					"match": "\\\\."
-				}
-			]
+		"comments": {
+			"patterns": [{
+				"name": "comment.line.sus",
+				"match": "# .*"
+			}]
 		}
 	},
 	"scopeName": "source.sus"

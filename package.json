@@ -1,7 +1,7 @@
 {
     "name": "sus",
     "displayName": "StoryUtilityScript",
-    "description": "The Visual Studio Code  extension for the SUScript language.",
+    "description": "The Visual Studio Code extension for the SUScript language.",
     "version": "0.0.1",
     "engines": {
         "vscode": "^1.62.0"
