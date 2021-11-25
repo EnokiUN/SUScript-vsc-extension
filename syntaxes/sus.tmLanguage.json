@@ -3,21 +3,37 @@
 	"name": "SUS",
 	"patterns": [
 		{
-			"include": "#keywords"
+			"include": "#comments"
+		},
+		{
+			"include": "#operators"
+		},
+		{
+			"include": "#functions"
 		}
 	],
 	"repository": {
-		"keywords": {
-			"patterns": [{
-				"name": "keyword.control.sus",
-				"match": "\\b(if|while|for|return)\\b"
-			}]
-		},
 		"comments": {
 			"patterns": [{
 				"name": "comment.line.sus",
 				"match": "# .*"
 			}]
+		},
+		"operators": {
+			"patterns": [{
+				"name": "keyword.operator.sus",
+				"match": "(\\$\\$|,|&&|!!)"
+			}]
+		},
+		"functions": {
+			"begin": "- ?",
+			"end": " ",
+			"patterns": [
+				{
+					"name": "keyword.control.sis",
+					"match": "[A-Z]*"
+				}
+			]
 		}
 	},
 	"scopeName": "source.sus"
